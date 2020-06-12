@@ -1,0 +1,176 @@
+@import "../../../../Utils/LessAccessories/variables.less";
+@import "../../../../Utils/LessAccessories/mixins.less";
+
+.origin-section {
+    position: relative;
+    display: flex;
+    color: #ffffff;
+}
+
+.dog-origin-img {
+    height: auto;
+    width: 100%;
+}
+.darker-bg-color {
+    .pos-abs();
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+    display: none;
+}
+.content-box {
+    .pos-abs();
+    width: 50%;
+    max-height: 100%;
+    padding: 8rem 0 5rem 8rem;
+    display: flex;
+    flex-direction: column;
+
+    background-color: rgba(0, 0, 0, 0.2);
+    @supports (background: linear-gradient(180deg, rgba(0, 0, 0, 0.3) 80%, rgba(0, 212, 255, 0) 100%)) {
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0.3) 80%, rgba(0, 212, 255, 0) 100%);
+    }
+
+    &--lower {
+        width: 60%;
+        @supports (background: linear-gradient(90deg, rgba(0, 0, 0, 0.3) 80%, rgba(0, 212, 255, 0) 100%)) {
+            background: linear-gradient(90deg, rgba(0, 0, 0, 0.3) 80%, rgba(0, 212, 255, 0) 100%);
+        }
+    }
+
+    &__origin-title {
+        margin-bottom: 1.5rem;
+        font-size: @f-size-largest;
+        font-weight: 600;
+    }
+
+    &__origin-description {
+        width: 66%;
+        font-size: @f-size-medium;
+        line-height: 2;
+        text-align: justify;
+
+        &--lower {
+            width: 80%;
+        }
+    }
+
+    &__origin-more-button {
+        .button-without-outline();
+        .button-push-animation();
+        .button-hover-animation();
+        margin-top: 3rem;
+        padding: 2rem 4rem;
+        align-self: flex-start;
+        color: #ffffff;
+        background-color: transparent;
+        border: #ffffff 2px solid;
+        font-size: @f-size-medium-smaller;
+        font-weight: 600;
+        cursor: pointer;
+        transition: all .2s;
+    }
+}
+
+.border-between-origin {
+    margin-bottom: 4rem;
+    transform: translateX(-8rem);
+    display: flex;
+    flex-direction: row;
+
+    &__white-line {
+        width: 85%;
+        border-bottom: 2px white solid;
+
+        &--lower {
+            width: 95%;
+        }
+    }
+
+    &__circle-origin {
+        margin-bottom: -1.2rem;
+        height: 2.5rem;
+        width: 2.5rem;
+        border: 2px solid #ffffff;
+        border-radius: 50%;
+    }
+}
+
+@media only screen and (max-width: @tab-landscape) {
+    .content-box {
+        padding: 5rem 0 5rem 5rem;
+
+        &--lower {
+            width: 65%;
+        }
+
+        &__origin-title {
+            margin-bottom: 1.5rem;
+            font-size: @f-size-large;
+        }
+
+        &__origin-description {
+            font-size: @f-size-medium-smaller;
+            width: 75%;
+            &--lower {
+                width: 80%;
+            }
+        }
+
+        &__origin-more-button {
+            margin-top: 2.5rem;
+            padding: 1.5rem 3rem;
+            font-size: @f-size-normal;
+        }
+    }
+    .border-between-origin {
+        margin-bottom: 2rem;
+        transform: translateX(-5rem);
+
+        &__white-line {
+            width: 85%;
+        }
+    }
+}
+@media only screen and (max-width: @tab-portrait) {
+    .origin-section {
+        flex-direction: column;
+    }
+    .darker-bg-color {
+        display: block;
+    }
+    .content-box {
+        position: relative;
+        background-color: @bg-color-grey-dark-3;
+        width: 100%;
+    }
+}
+@media only screen and (max-width: @phone) {
+    .content-box {
+        padding: 3rem 0 3rem 3rem;
+
+        &__origin-title {
+            margin-bottom: 1.5rem;
+            font-size: @f-size-medium;
+        }
+
+        &__origin-description {
+            font-size: @f-size-normal;
+            line-height: 1.8;
+            width: 90%;
+        }
+
+        &__origin-more-button {
+            margin-top: 1.5rem;
+            padding: 1rem 2rem;
+            font-size: @f-size-small;
+        }
+    }
+    .border-between-origin {
+        margin-bottom: 2.5rem;
+        transform: translateX(-3rem);
+        &__white-line {
+            width: 95%;
+        }
+    }
+}

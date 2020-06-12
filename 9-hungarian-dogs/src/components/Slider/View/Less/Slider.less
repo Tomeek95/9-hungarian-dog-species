@@ -1,0 +1,79 @@
+@import "../../../../Utils/LessAccessories/mixins.less";
+
+.slide-container {
+    .navbar-fixed-props();
+    height: 100%;
+    background-color: black;
+    z-index: 100;
+
+    .image-container {
+        position: relative;
+        align-self: center;
+        margin: 0 auto;
+
+        &__current-image {
+            position: relative;
+            align-self: center;
+            width: 100%;
+            height: auto;
+        }
+        &__left-side-of-img {
+            .image-clickable-side();
+            left: 0;
+        }
+        &__right-side-of-img {
+            .image-clickable-side();
+            right: 0;
+        }
+    }
+
+    .prev-button {
+        .button-without-outline();
+        .image-slider-button();
+        .button-hover-animation();
+        left: 5%;
+        transform: rotate(135deg);
+        -webkit-transform: rotate(135deg);
+        transition: all .25s;
+    }
+
+    .next-button {
+        .button-without-outline();
+        .image-slider-button();
+        .button-hover-animation();
+        right: 5%;
+        transform: rotate(-45deg);
+        -webkit-transform: rotate(-45deg);
+        transition: all .25s;
+    }
+
+    .close-slider {
+        .button-without-outline();
+        .button-push-animation();
+        .button-hover-animation();
+        position: fixed;
+        top: 10%;
+        right: 10%;
+        z-index: 1000;
+
+        border: none;
+        background-color: transparent;
+        font-family: 'Fredoka One';
+        color: white;
+        font-weight: 600;
+        font-size: @f-size-largest;
+        cursor: pointer;
+        transform: all .25s;
+        &:focus {
+            outline: none;
+        }
+    }
+}
+
+@media (max-width: @tab-portrait) {
+    .slide-container {
+        .image-container {
+            width: 70%;
+        }
+    }
+}

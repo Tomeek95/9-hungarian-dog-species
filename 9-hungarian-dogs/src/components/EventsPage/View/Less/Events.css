@@ -1,0 +1,204 @@
+/*
+@margin-top-smaller: 1rem;
+@margin-top-small: 2rem;
+@margin-top-medium: 4rem;
+@margin-top-big: 6rem;
+@margin-top-large: 8rem;
+@margin-top-larger: 10rem;
+
+//margin-bottom
+@margin-bottom-smaller: 1rem;
+@margin-bottom-small: 2rem;
+@margin-bottom-medium: 4rem;
+@margin-bottom-big: 6rem;
+@margin-bottom-large: 8rem;
+@margin-bottom-larger: 10rem;
+*/
+.navbar-fixed-props {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  width: 100%;
+  display: flex;
+  font-family: "Arial";
+}
+.image-clickable-side {
+  position: absolute;
+  top: 0;
+  width: 50%;
+  height: 100%;
+  z-index: 101;
+}
+.image-slider-button {
+  position: fixed;
+  top: 50%;
+  background-color: transparent;
+  font-family: 'Fredoka One';
+  color: #fff;
+  font-weight: 600;
+  font-size: 3.8rem;
+  cursor: pointer;
+  border: solid white;
+  border-width: 0 8px 8px 0;
+  border-radius: 10%;
+  display: inline-block;
+  padding: 2.5rem;
+}
+@media only screen and (max-width: 28.125em) {
+  .image-slider-button {
+    top: 48%;
+    padding: 1.8rem;
+    border-width: 0 5px 5px 0;
+  }
+}
+.button-without-outline:focus {
+  outline: none;
+}
+.button-push-animation:active {
+  transform: translateY(2px);
+}
+.button-hover-animation:hover {
+  opacity: 0.6;
+}
+.events-page {
+  background-color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.top-section {
+  height: 20rem;
+  width: 100%;
+  background-color: black;
+  display: flex;
+}
+.top-section__title {
+  align-self: flex-end;
+  margin: 4rem 0 4rem 20%;
+  color: #ffffff;
+  font-size: 2.8rem;
+  font-weight: 600;
+}
+.events-container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 65%;
+  margin: 5rem auto 10rem auto;
+}
+.event-card {
+  margin: 0 auto 4rem auto;
+  background-color: white;
+  width: 45%;
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.1);
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(5, auto-fit);
+  grid-row-gap: 2rem;
+}
+.event-card__event-image {
+  grid-column: 1 / span 3;
+  grid-row: 1 / span 1;
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.event-card__event-title {
+  grid-column: 1 / span 3;
+  grid-row: 2 / span 1;
+  padding: 0 2rem;
+  font-size: 2rem;
+  font-weight: 600;
+}
+.event-card__event-short-text {
+  grid-column: 1 / span 3;
+  grid-row: 3 / span 1;
+  padding: 0 2rem;
+  color: #9d9d9d;
+  font-size: 1.8rem;
+  line-height: 1.6;
+  text-align: justify;
+}
+.event-card__event-date {
+  grid-column: 1 / span 1;
+  grid-row: 4 / span 1;
+  padding: 0 2rem;
+  color: #9d9d9d;
+  font-size: 1.8rem;
+}
+.event-card__detailes-button {
+  grid-column: 3 / span 1;
+  grid-row: 4 / span 1;
+  justify-self: center;
+  align-self: start;
+  padding: 0.5rem 1rem;
+  margin-right: 1rem;
+  margin-bottom: 2rem;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.6rem;
+  color: black;
+  background-color: white;
+  border: 2px solid black;
+  cursor: pointer;
+  transition: all 0.25s;
+}
+.event-card__detailes-button:focus {
+  outline: none;
+}
+.event-card__detailes-button:active {
+  transform: translateY(2px);
+}
+.event-card__detailes-button:hover {
+  opacity: 0.6;
+}
+.event-card:last-child {
+  margin: 0 2.3% 4rem 2.3%;
+}
+@media only screen and (max-width: 75em) {
+  .events-container {
+    width: 80%;
+  }
+}
+@media only screen and (max-width: 56.25em) {
+  .events-container {
+    flex-direction: column;
+    margin: 4rem auto;
+  }
+  .event-card {
+    width: 70%;
+  }
+  .event-card:last-child {
+    margin: 0 auto 4rem auto;
+  }
+  .top-section {
+    height: 150px;
+  }
+}
+@media only screen and (max-width: 37.5em) {
+  .event-card {
+    width: 90%;
+  }
+}
+@media only screen and (max-width: 28.125em) {
+  .event-card {
+    width: 95%;
+    grid-row-gap: 1.5rem;
+  }
+  .event-card__event-title {
+    padding: 0 1rem;
+    font-size: 1.8rem;
+  }
+  .event-card__event-short-text {
+    padding: 0 1rem;
+    font-size: 1.6rem;
+  }
+  .event-card__event-date {
+    padding: 0 1rem;
+    font-size: 1.6rem;
+  }
+  .event-card__detailes-button {
+    grid-row: 4 / span 1;
+    padding: 0.5rem 1rem;
+    margin-right: 1rem;
+    font-size: 1.4rem;
+  }
+}

@@ -1,0 +1,142 @@
+@import "../../../../Utils/LessAccessories/variables.less";
+@import "../../../../Utils/LessAccessories/mixins.less";
+
+.more-origin-info-container {
+    display: flex;
+    flex-direction: column;
+
+    .navbar-fixed-props();
+    background-color: #ffffff;
+    height: 0;
+    overflow: hidden;
+}
+.full-width-line {
+    .navbar-fixed-props();
+    width: 100%;
+    padding: 2rem;
+    justify-content: flex-end;
+    background-color: #ffffff;
+
+    &__back-button {
+        .button-without-outline();
+        .button-push-animation();
+        .button-hover-animation();
+        background-color: #ffffff;
+        padding: 1rem 5rem;
+        border: 2px black solid;
+        margin-right: 6rem;
+        font-size: @f-size-normal;
+        font-weight: 600;
+        cursor: pointer;
+        transition: all .2s;
+    }
+}
+
+.controlled-width {
+    width: 45%;
+    margin: 2rem auto;
+    display: flex;
+    flex-direction: column;
+
+    &__origin-info-title {
+        font-size: @f-size-largest;
+        margin: 8rem 0 2rem 0;
+    }
+    &__text-orig {
+        line-height: 2;
+        font-size: @f-size-medium;
+        text-align: justify;
+        margin-bottom: 2rem;
+    }
+    &__subheading {
+        font-size: @f-size-medium-bigger;
+        margin-bottom: 1.5rem;
+    }
+}
+
+.more-info-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 2rem;
+
+    &--wider {
+        width: 60%;
+        margin: 0 auto 2rem auto;
+    }
+}
+
+.do-not-show {
+    display: none;
+}
+
+.show-container {
+    animation: opac 1s;
+    height: 100%;
+    width: 100%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+@keyframes opac {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@media only screen and (max-width: @tab-landscape) {
+    .controlled-width {
+        width: 60%;
+    }
+    .more-info-image {
+        &--wider {
+            width: 70%;
+        }
+    }
+}
+@media only screen and (max-width: @tab-portrait) {
+    .controlled-width {
+        width: 80%;
+    }
+    .more-info-image {
+        &--wider {
+            width: 80%;
+        }
+    }
+}
+
+@media only screen and (max-width: @phone) {
+    .full-width-line {
+        padding: 1.5rem;
+        &__back-button {
+            padding: .5rem 3rem;
+            margin-right: 3rem;
+        }
+    }
+    .controlled-width {
+        width: 85%;
+        margin-bottom: 1rem;
+        &__origin-info-title {
+            font-size: @f-size-large;
+            margin: 4rem 0 2rem 0;
+        }
+        &__text-orig {
+            line-height: 1.6;
+            font-size: @f-size-medium-smaller;
+        }
+        &__subheading {
+            font-size: @f-size-medium;
+            margin-bottom: 1.5rem;
+        }
+    }
+    .more-info-image {
+        margin-bottom: 1.5rem;
+        &--wider {
+            width: 85%;
+            margin-bottom: 1.5rem;
+        }
+    }
+}

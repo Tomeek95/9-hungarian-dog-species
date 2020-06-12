@@ -1,0 +1,40 @@
+@import "../../../../Utils/LessAccessories/variables.less";
+
+.dummy-div-to-the-top {
+    position: relative;
+    display: none;
+    width: 100%;
+    height: 4.5rem;
+}
+
+.about-container {
+    width: 50%;
+    margin: 6rem auto 6rem auto;
+    text-align: justify;
+}
+
+.title-of-content {
+    font-size: @f-size-medium-bigger;
+    margin-bottom: 2rem;
+}
+
+.text-of-content {
+    font-size: @f-size-medium-smaller;
+    line-height: 2;
+}
+
+@media (max-width: @tab-portrait) {
+    .dummy-div-to-the-top {
+        display: block;
+    }
+
+    .about-container {
+        width: 80%;
+    }
+}
+
+@media (max-width: @phone-smaller) {
+    .dummy-div-to-the-top {
+        height: 4.5rem;
+    }
+}

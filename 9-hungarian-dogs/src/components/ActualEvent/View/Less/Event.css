@@ -1,0 +1,226 @@
+.navbar-fixed-props {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  width: 100%;
+  display: flex;
+  font-family: "Arial";
+}
+.image-clickable-side {
+  position: absolute;
+  top: 0;
+  width: 50%;
+  height: 100%;
+  z-index: 101;
+}
+.image-slider-button {
+  position: fixed;
+  top: 50%;
+  background-color: transparent;
+  font-family: 'Fredoka One';
+  color: #fff;
+  font-weight: 600;
+  font-size: 3.8rem;
+  cursor: pointer;
+  border: solid white;
+  border-width: 0 8px 8px 0;
+  border-radius: 10%;
+  display: inline-block;
+  padding: 2.5rem;
+}
+@media only screen and (max-width: 28.125em) {
+  .image-slider-button {
+    top: 48%;
+    padding: 1.8rem;
+    border-width: 0 5px 5px 0;
+  }
+}
+.button-without-outline:focus {
+  outline: none;
+}
+.button-push-animation:active {
+  transform: translateY(2px);
+}
+.button-hover-animation:hover {
+  opacity: 0.6;
+}
+.event-page {
+  position: relative;
+}
+.event-page .header-section {
+  position: relative;
+  height: 25vw;
+  width: 100%;
+  background-size: cover;
+  overflow: hidden;
+  color: #ffffff;
+}
+.event-page .header-section__header-image {
+  height: auto;
+  width: 100%;
+}
+.event-page .header-section__bg-cover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+.event-page .header-section__back-to-events-button {
+  position: absolute;
+  bottom: 15rem;
+  right: 28%;
+  text-decoration: none;
+  background-color: transparent;
+  padding: 0.5rem 3rem;
+  border: 2px white solid;
+  font-size: 1.8rem;
+  color: #ffffff;
+  font-weight: 600;
+  transition: all 0.25s;
+  cursor: pointer;
+}
+.event-page .header-section__back-to-events-button:focus {
+  outline: none;
+}
+.event-page .header-section__back-to-events-button:active {
+  transform: translateY(2px);
+}
+.event-page .header-section__back-to-events-button:hover {
+  opacity: 0.6;
+}
+.event-page .header-section__event-title {
+  position: absolute;
+  bottom: 1.5rem;
+  left: 25%;
+  font-size: 3.8rem;
+  width: 40%;
+}
+.event-page .event-container {
+  position: relative;
+  background-color: #fff;
+  width: 100%;
+}
+.event-page .checked-width {
+  width: 40%;
+  margin: 4rem auto 4rem auto;
+}
+.event-page .checked-width__event-title-2 {
+  display: none;
+  font-size: 2.4rem;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-bottom: 2rem;
+}
+.event-page .checked-width__event-text {
+  line-height: 2;
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+  text-align: justify;
+}
+.event-page .checked-width__event-image {
+  height: auto;
+  width: 100%;
+  display: block;
+  margin-bottom: 2rem;
+}
+.event-page .checked-width__event-subtitle {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+.event-page .more-events-section {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  background-color: #e3e3e3;
+  padding: 3rem 0;
+}
+.event-page .title-of-more-events {
+  width: 62%;
+  margin: 3rem auto 5rem auto;
+  font-size: 2.8rem;
+}
+@media only screen and (max-width: 75em) {
+  .event-page .title-of-more-events {
+    width: 76%;
+  }
+  .event-page .header-section__back-to-events-button {
+    bottom: 10rem;
+    right: 24%;
+  }
+  .event-page .header-section__event-title {
+    width: 40%;
+    font-size: 2.8rem;
+    bottom: 2rem;
+  }
+  .event-page .checked-width {
+    width: 60%;
+  }
+}
+@media only screen and (max-width: 56.25em) {
+  .event-page .header-section {
+    height: 28vw;
+  }
+  .event-page .header-section__back-to-events-button {
+    bottom: 6rem;
+    right: 20%;
+  }
+  .event-page .header-section__event-title {
+    display: none;
+  }
+  .event-page .title-of-more-events {
+    width: 58%;
+  }
+  .event-page .checked-width {
+    width: 70%;
+  }
+  .event-page .checked-width__event-title-2 {
+    display: block;
+  }
+}
+@media only screen and (max-width: 37.5em) {
+  .event-page .header-section__back-to-events-button {
+    bottom: 3rem;
+    right: 10%;
+    font-size: 1.6rem;
+  }
+  .event-page .checked-width {
+    width: 80%;
+    margin: 2.5rem auto;
+  }
+  .event-page .checked-width__event-title-2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  .event-page .checked-width__event-text {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+  }
+  .event-page .checked-width__event-image {
+    margin-bottom: 2rem;
+  }
+  .event-page .checked-width__event-subtitle {
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+  }
+  .event-page .title-of-more-events {
+    width: 74%;
+    font-size: 2.4rem;
+  }
+}
+@media only screen and (max-width: 28.125em) {
+  .event-page .header-section {
+    height: 40vw;
+  }
+  .event-page .header-section__back-to-events-button {
+    bottom: 2rem;
+    right: 10%;
+    padding: 0.5rem 2rem;
+    border: 1px white solid;
+    font-size: 1.6rem;
+  }
+  .event-page .checked-width__event-text {
+    line-height: 1.6;
+  }
+}

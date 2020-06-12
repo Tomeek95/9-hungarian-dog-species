@@ -1,0 +1,75 @@
+/*
+//margin-top
+@margin-top-smaller: 1rem;
+@margin-top-small: 2rem;
+@margin-top-medium: 4rem;
+@margin-top-big: 6rem;
+@margin-top-large: 8rem;
+@margin-top-larger: 10rem;
+
+//margin-bottom
+@margin-bottom-smaller: 1rem;
+@margin-bottom-small: 2rem;
+@margin-bottom-medium: 4rem;
+@margin-bottom-big: 6rem;
+@margin-bottom-large: 8rem;
+@margin-bottom-larger: 10rem;
+*/
+.navbar-fixed-props {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  width: 100%;
+  display: flex;
+  font-family: "Arial";
+}
+.image-clickable-side {
+  position: absolute;
+  top: 0;
+  width: 50%;
+  height: 100%;
+  z-index: 101;
+}
+.image-slider-button {
+  position: fixed;
+  top: 50%;
+  background-color: transparent;
+  font-family: 'Fredoka One';
+  color: #fff;
+  font-weight: 600;
+  font-size: 3.8rem;
+  cursor: pointer;
+  border: solid white;
+  border-width: 0 8px 8px 0;
+  border-radius: 10%;
+  display: inline-block;
+  padding: 2.5rem;
+}
+@media only screen and (max-width: 28.125em) {
+  .image-slider-button {
+    top: 48%;
+    padding: 1.8rem;
+    border-width: 0 5px 5px 0;
+  }
+}
+.pos-abs {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.bg-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  background-size: cover;
+}
+.button-without-outline:focus {
+  outline: none;
+}
+.button-push-animation:active {
+  transform: translateY(2px);
+}
+.button-hover-animation:hover {
+  opacity: 0.6;
+}

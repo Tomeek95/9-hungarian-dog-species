@@ -1,0 +1,181 @@
+.navbar-fixed-props {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  width: 100%;
+  display: flex;
+  font-family: "Arial";
+}
+.image-clickable-side {
+  position: absolute;
+  top: 0;
+  width: 50%;
+  height: 100%;
+  z-index: 101;
+}
+.image-slider-button {
+  position: fixed;
+  top: 50%;
+  background-color: transparent;
+  font-family: 'Fredoka One';
+  color: #fff;
+  font-weight: 600;
+  font-size: 3.8rem;
+  cursor: pointer;
+  border: solid white;
+  border-width: 0 8px 8px 0;
+  border-radius: 10%;
+  display: inline-block;
+  padding: 2.5rem;
+}
+@media only screen and (max-width: 28.125em) {
+  .image-slider-button {
+    top: 48%;
+    padding: 1.8rem;
+    border-width: 0 5px 5px 0;
+  }
+}
+.button-without-outline:focus {
+  outline: none;
+}
+.button-push-animation:active {
+  transform: translateY(2px);
+}
+.button-hover-animation:hover {
+  opacity: 0.6;
+}
+.slide-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  width: 100%;
+  display: flex;
+  font-family: "Arial";
+  height: 100%;
+  background-color: black;
+  z-index: 100;
+}
+.slide-container .image-container {
+  position: relative;
+  align-self: center;
+  margin: 0 auto;
+}
+.slide-container .image-container__current-image {
+  position: relative;
+  align-self: center;
+  width: 100%;
+  height: auto;
+}
+.slide-container .image-container__left-side-of-img {
+  position: absolute;
+  top: 0;
+  width: 50%;
+  height: 100%;
+  z-index: 101;
+  left: 0;
+}
+.slide-container .image-container__right-side-of-img {
+  position: absolute;
+  top: 0;
+  width: 50%;
+  height: 100%;
+  z-index: 101;
+  right: 0;
+}
+.slide-container .prev-button {
+  position: fixed;
+  top: 50%;
+  background-color: transparent;
+  font-family: 'Fredoka One';
+  color: #fff;
+  font-weight: 600;
+  font-size: 3.8rem;
+  cursor: pointer;
+  border: solid white;
+  border-width: 0 8px 8px 0;
+  border-radius: 10%;
+  display: inline-block;
+  padding: 2.5rem;
+  left: 5%;
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+  transition: all 0.25s;
+}
+.slide-container .prev-button:focus {
+  outline: none;
+}
+@media only screen and (max-width: 28.125em) {
+  .slide-container .prev-button {
+    top: 48%;
+    padding: 1.8rem;
+    border-width: 0 5px 5px 0;
+  }
+}
+.slide-container .prev-button:hover {
+  opacity: 0.6;
+}
+.slide-container .next-button {
+  position: fixed;
+  top: 50%;
+  background-color: transparent;
+  font-family: 'Fredoka One';
+  color: #fff;
+  font-weight: 600;
+  font-size: 3.8rem;
+  cursor: pointer;
+  border: solid white;
+  border-width: 0 8px 8px 0;
+  border-radius: 10%;
+  display: inline-block;
+  padding: 2.5rem;
+  right: 5%;
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  transition: all 0.25s;
+}
+.slide-container .next-button:focus {
+  outline: none;
+}
+@media only screen and (max-width: 28.125em) {
+  .slide-container .next-button {
+    top: 48%;
+    padding: 1.8rem;
+    border-width: 0 5px 5px 0;
+  }
+}
+.slide-container .next-button:hover {
+  opacity: 0.6;
+}
+.slide-container .close-slider {
+  position: fixed;
+  top: 10%;
+  right: 10%;
+  z-index: 1000;
+  border: none;
+  background-color: transparent;
+  font-family: 'Fredoka One';
+  color: white;
+  font-weight: 600;
+  font-size: 3.8rem;
+  cursor: pointer;
+  transform: all 0.25s;
+}
+.slide-container .close-slider:focus {
+  outline: none;
+}
+.slide-container .close-slider:active {
+  transform: translateY(2px);
+}
+.slide-container .close-slider:hover {
+  opacity: 0.6;
+}
+.slide-container .close-slider:focus {
+  outline: none;
+}
+@media (max-width: 56.25em) {
+  .slide-container .image-container {
+    width: 70%;
+  }
+}

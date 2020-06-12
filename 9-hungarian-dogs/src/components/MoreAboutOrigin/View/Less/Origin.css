@@ -1,0 +1,215 @@
+/*
+//margin-top
+@margin-top-smaller: 1rem;
+@margin-top-small: 2rem;
+@margin-top-medium: 4rem;
+@margin-top-big: 6rem;
+@margin-top-large: 8rem;
+@margin-top-larger: 10rem;
+
+//margin-bottom
+@margin-bottom-smaller: 1rem;
+@margin-bottom-small: 2rem;
+@margin-bottom-medium: 4rem;
+@margin-bottom-big: 6rem;
+@margin-bottom-large: 8rem;
+@margin-bottom-larger: 10rem;
+*/
+.navbar-fixed-props {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  width: 100%;
+  display: flex;
+  font-family: "Arial";
+}
+.image-clickable-side {
+  position: absolute;
+  top: 0;
+  width: 50%;
+  height: 100%;
+  z-index: 101;
+}
+.image-slider-button {
+  position: fixed;
+  top: 50%;
+  background-color: transparent;
+  font-family: 'Fredoka One';
+  color: #fff;
+  font-weight: 600;
+  font-size: 3.8rem;
+  cursor: pointer;
+  border: solid white;
+  border-width: 0 8px 8px 0;
+  border-radius: 10%;
+  display: inline-block;
+  padding: 2.5rem;
+}
+@media only screen and (max-width: 28.125em) {
+  .image-slider-button {
+    top: 48%;
+    padding: 1.8rem;
+    border-width: 0 5px 5px 0;
+  }
+}
+.pos-abs {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.bg-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  background-size: cover;
+}
+.button-without-outline:focus {
+  outline: none;
+}
+.button-push-animation:active {
+  transform: translateY(2px);
+}
+.button-hover-animation:hover {
+  opacity: 0.6;
+}
+.more-origin-info-container {
+  flex-direction: column;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  width: 100%;
+  display: flex;
+  font-family: "Arial";
+  background-color: #ffffff;
+  height: 0;
+  overflow: hidden;
+}
+.full-width-line {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  display: flex;
+  font-family: "Arial";
+  width: 100%;
+  padding: 2rem;
+  justify-content: flex-end;
+  background-color: #ffffff;
+}
+.full-width-line__back-button {
+  background-color: #ffffff;
+  padding: 1rem 5rem;
+  border: 2px black solid;
+  margin-right: 6rem;
+  font-size: 1.6rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.full-width-line__back-button:focus {
+  outline: none;
+}
+.full-width-line__back-button:active {
+  transform: translateY(2px);
+}
+.full-width-line__back-button:hover {
+  opacity: 0.6;
+}
+.controlled-width {
+  width: 45%;
+  margin: 2rem auto;
+  display: flex;
+  flex-direction: column;
+}
+.controlled-width__origin-info-title {
+  font-size: 3.8rem;
+  margin: 8rem 0 2rem 0;
+}
+.controlled-width__text-orig {
+  line-height: 2;
+  font-size: 2rem;
+  text-align: justify;
+  margin-bottom: 2rem;
+}
+.controlled-width__subheading {
+  font-size: 2.4rem;
+  margin-bottom: 1.5rem;
+}
+.more-info-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin-bottom: 2rem;
+}
+.more-info-image--wider {
+  width: 60%;
+  margin: 0 auto 2rem auto;
+}
+.do-not-show {
+  display: none;
+}
+.show-container {
+  animation: opac 1s;
+  height: 100%;
+  width: 100%;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+@keyframes opac {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@media only screen and (max-width: 75em) {
+  .controlled-width {
+    width: 60%;
+  }
+  .more-info-image--wider {
+    width: 70%;
+  }
+}
+@media only screen and (max-width: 56.25em) {
+  .controlled-width {
+    width: 80%;
+  }
+  .more-info-image--wider {
+    width: 80%;
+  }
+}
+@media only screen and (max-width: 37.5em) {
+  .full-width-line {
+    padding: 1.5rem;
+  }
+  .full-width-line__back-button {
+    padding: 0.5rem 3rem;
+    margin-right: 3rem;
+  }
+  .controlled-width {
+    width: 85%;
+    margin-bottom: 1rem;
+  }
+  .controlled-width__origin-info-title {
+    font-size: 2.8rem;
+    margin: 4rem 0 2rem 0;
+  }
+  .controlled-width__text-orig {
+    line-height: 1.6;
+    font-size: 1.8rem;
+  }
+  .controlled-width__subheading {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+  }
+  .more-info-image {
+    margin-bottom: 1.5rem;
+  }
+  .more-info-image--wider {
+    width: 85%;
+    margin-bottom: 1.5rem;
+  }
+}
