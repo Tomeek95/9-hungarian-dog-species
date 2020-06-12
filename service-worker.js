@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/9-hungarian-dog-species/precache-manifest.4d32cab4a7fdbd2a46b9b9a5303f9926.js"
+  "/9-hungarian-dog-species/precache-manifest.94f5a499c6c5c052ff41327eedf6cc74.js"
 );
 
 self.addEventListener('message', (event) => {

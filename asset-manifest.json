@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/9-hungarian-dog-species/static/css/main.6b5bbc3c.chunk.css",
-    "main.js": "/9-hungarian-dog-species/static/js/main.fa2c53f4.chunk.js",
-    "main.js.map": "/9-hungarian-dog-species/static/js/main.fa2c53f4.chunk.js.map",
+    "main.js": "/9-hungarian-dog-species/static/js/main.4e8d9b84.chunk.js",
+    "main.js.map": "/9-hungarian-dog-species/static/js/main.4e8d9b84.chunk.js.map",
     "runtime-main.js": "/9-hungarian-dog-species/static/js/runtime-main.aef3e19c.js",
     "runtime-main.js.map": "/9-hungarian-dog-species/static/js/runtime-main.aef3e19c.js.map",
     "static/js/2.38474e91.chunk.js": "/9-hungarian-dog-species/static/js/2.38474e91.chunk.js",
     "static/js/2.38474e91.chunk.js.map": "/9-hungarian-dog-species/static/js/2.38474e91.chunk.js.map",
     "index.html": "/9-hungarian-dog-species/index.html",
-    "precache-manifest.4d32cab4a7fdbd2a46b9b9a5303f9926.js": "/9-hungarian-dog-species/precache-manifest.4d32cab4a7fdbd2a46b9b9a5303f9926.js",
+    "precache-manifest.94f5a499c6c5c052ff41327eedf6cc74.js": "/9-hungarian-dog-species/precache-manifest.94f5a499c6c5c052ff41327eedf6cc74.js",
     "service-worker.js": "/9-hungarian-dog-species/service-worker.js",
     "static/css/main.6b5bbc3c.chunk.css.map": "/9-hungarian-dog-species/static/css/main.6b5bbc3c.chunk.css.map",
     "static/js/2.38474e91.chunk.js.LICENSE.txt": "/9-hungarian-dog-species/static/js/2.38474e91.chunk.js.LICENSE.txt",
@@ -49,6 +49,6 @@
     "static/js/runtime-main.aef3e19c.js",
     "static/js/2.38474e91.chunk.js",
     "static/css/main.6b5bbc3c.chunk.css",
-    "static/js/main.fa2c53f4.chunk.js"
+    "static/js/main.4e8d9b84.chunk.js"
   ]
 }
