@@ -60,7 +60,11 @@ const dogBreeds: React.FC<IProps> = (props) => {
             )}
             <div className={props.sliding ? visibility.join(" ") : "image-montage"}>
                 {imageContainer.map((img) => (
-                    <NavLink className="image-card" key={img.imgpath} to="spec-dog">
+                    <NavLink
+                        className="image-card"
+                        key={img.imgpath}
+                        to="/9-hungarian-dog-species/spec-dog"
+                    >
                         <img
                             src={img.imgpath}
                             alt="magyar-vizsla"

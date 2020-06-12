@@ -35,7 +35,10 @@ const eventsView: React.FC<IProps> = (props) => {
                             <h2 className="event-card__event-title">{event.title}</h2>
                             <p className="event-card__event-short-text">{event.text}</p>
                             <p className="event-card__event-date">{event.date}</p>
-                            <NavLink className="event-card__detailes-button" to="event">
+                            <NavLink
+                                className="event-card__detailes-button"
+                                to="/9-hungarian-dog-species/event"
+                            >
                                 RÉSZLETEK
                             </NavLink>
                         </div>

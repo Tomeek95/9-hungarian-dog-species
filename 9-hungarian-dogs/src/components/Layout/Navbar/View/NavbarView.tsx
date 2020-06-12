@@ -70,7 +70,7 @@ const navbar: React.FC<IProps> = (props) => {
                     </div>
                 )}
 
-                <NavLink className="links" to="events">
+                <NavLink className="links" to="/9-hungarian-dog-species/events">
                     Események
                 </NavLink>
 
@@ -148,7 +148,10 @@ const navbar: React.FC<IProps> = (props) => {
                             )}
                         </li>
                         <li className="link-item">
-                            <NavLink className="links links--white" to="events">
+                            <NavLink
+                                className="links links--white"
+                                to="/9-hungarian-dog-species/events"
+                            >
                                 Események
                             </NavLink>
                         </li>

@@ -33,7 +33,10 @@ const eventsView: React.FC<IProps> = (props) => {
                         alt="eventHeader"
                     />
                     <div className="header-section__bg-cover" />
-                    <NavLink className="header-section__back-to-events-button" to="events">
+                    <NavLink
+                        className="header-section__back-to-events-button"
+                        to="/9-hungarian-dog-species/events"
+                    >
                         VISSZA
                     </NavLink>
                     <h1 className="header-section__event-title">{props.data.eventTitle}</h1>
