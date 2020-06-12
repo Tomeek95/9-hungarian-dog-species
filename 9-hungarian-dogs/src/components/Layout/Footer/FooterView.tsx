@@ -9,7 +9,7 @@ interface IProps {}
 const footer: React.FC<IProps> = (props) => {
     return (
         <section className="footer">
-            <NavLink className="brand-section-f" to="/">
+            <NavLink className="brand-section-f" to="/9-hungarian-dog-species">
                 <img src={dogLogo} alt="dog" className="brand-section-f__logo-f" />
                 <h3 className="brand-section-f__title-f">A kilenc magyar kutya</h3>
             </NavLink>

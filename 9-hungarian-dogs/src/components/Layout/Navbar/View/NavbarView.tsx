@@ -59,7 +59,7 @@ const navbar: React.FC<IProps> = (props) => {
     return (
         <div className="navbar-container">
             <nav className={navbarClassName.join(" ")}>
-                <NavLink className={brandSectionClassName.join(" ")} to="/">
+                <NavLink className={brandSectionClassName.join(" ")} to="/9-hungarian-dog-species">
                     <img src={logo} alt="dog-logo" className={brandLogoClassName.join(" ")} />
                     <h3 className={brandTitleClassName.join(" ")}>A kilenc magyar kutya</h3>
                 </NavLink>
@@ -74,14 +74,17 @@ const navbar: React.FC<IProps> = (props) => {
                     Események
                 </NavLink>
 
-                <NavLink className="links" to="/">
+                <NavLink className="links" to="/9-hungarian-dog-species">
                     Rólunk
                 </NavLink>
             </nav>
 
             {props.navbarComplexity === "complex" && (
                 <nav className={specdogSecClassName.join(" ")}>
-                    <NavLink className="brand-section brand-section--sp-2" to="/">
+                    <NavLink
+                        className="brand-section brand-section--sp-2"
+                        to="/9-hungarian-dog-species"
+                    >
                         <h3 className="brand-section__page-title brand-section__page-title--sp-2">
                             Magyar vizsla
                         </h3>
@@ -120,7 +123,10 @@ const navbar: React.FC<IProps> = (props) => {
             )}
             <div>
                 <nav className={mobileNavClassName.join(" ")}>
-                    <NavLink className="brand-section brand-section--sp-2" to="/">
+                    <NavLink
+                        className="brand-section brand-section--sp-2"
+                        to="/9-hungarian-dog-species"
+                    >
                         <h3 className="brand-section__page-title brand-section__page-title--sp-2">
                             9 Magyar kutya
                         </h3>
@@ -147,7 +153,7 @@ const navbar: React.FC<IProps> = (props) => {
                             </NavLink>
                         </li>
                         <li className="link-item">
-                            <NavLink className="links links--white" to="/">
+                            <NavLink className="links links--white" to="/9-hungarian-dog-species">
                                 Rólunk
                             </NavLink>
                         </li>
