@@ -11,7 +11,7 @@ function App(){
         <div className="App">
             <Router>
                 <Switch>
-                    <Route exact path="/9-hungarian-dog-species" component={PageController} />
+                    <Route exact path="/" component={PageController} />
                     <Route exact path="/spec-dog" component={SpecDogController} />
                     <Route exact path="/events" component={EventsController} />
                     <Route exact path="/event" component={EventController} />
