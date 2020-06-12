@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "e931737a1c0afc97be6300220b9908f5",
+    "revision": "b92f2e4662b2c1c14974e2bc4f6b1570",
     "url": "/9-hungarian-dog-species/index.html"
   },
   {
-    "revision": "9f44f8c3c4cebfb366ba",
+    "revision": "313953b82327087b0457",
     "url": "/9-hungarian-dog-species/static/css/main.6b5bbc3c.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/9-hungarian-dog-species/static/js/2.38474e91.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "9f44f8c3c4cebfb366ba",
-    "url": "/9-hungarian-dog-species/static/js/main.21b73aad.chunk.js"
+    "revision": "313953b82327087b0457",
+    "url": "/9-hungarian-dog-species/static/js/main.e2517227.chunk.js"
   },
   {
     "revision": "4dd791ae468d5b81181b",
