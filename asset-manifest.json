@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/9-hungarian-dog-species/static/css/main.6b5bbc3c.chunk.css",
-    "main.js": "/9-hungarian-dog-species/static/js/main.4e8d9b84.chunk.js",
-    "main.js.map": "/9-hungarian-dog-species/static/js/main.4e8d9b84.chunk.js.map",
+    "main.css": "/9-hungarian-dog-species/static/css/main.be8214ac.chunk.css",
+    "main.js": "/9-hungarian-dog-species/static/js/main.ddde5085.chunk.js",
+    "main.js.map": "/9-hungarian-dog-species/static/js/main.ddde5085.chunk.js.map",
     "runtime-main.js": "/9-hungarian-dog-species/static/js/runtime-main.aef3e19c.js",
     "runtime-main.js.map": "/9-hungarian-dog-species/static/js/runtime-main.aef3e19c.js.map",
     "static/js/2.38474e91.chunk.js": "/9-hungarian-dog-species/static/js/2.38474e91.chunk.js",
     "static/js/2.38474e91.chunk.js.map": "/9-hungarian-dog-species/static/js/2.38474e91.chunk.js.map",
     "index.html": "/9-hungarian-dog-species/index.html",
-    "precache-manifest.94f5a499c6c5c052ff41327eedf6cc74.js": "/9-hungarian-dog-species/precache-manifest.94f5a499c6c5c052ff41327eedf6cc74.js",
+    "precache-manifest.13cff829a6a9cd5f723c2dc4f1ecab77.js": "/9-hungarian-dog-species/precache-manifest.13cff829a6a9cd5f723c2dc4f1ecab77.js",
     "service-worker.js": "/9-hungarian-dog-species/service-worker.js",
-    "static/css/main.6b5bbc3c.chunk.css.map": "/9-hungarian-dog-species/static/css/main.6b5bbc3c.chunk.css.map",
+    "static/css/main.be8214ac.chunk.css.map": "/9-hungarian-dog-species/static/css/main.be8214ac.chunk.css.map",
     "static/js/2.38474e91.chunk.js.LICENSE.txt": "/9-hungarian-dog-species/static/js/2.38474e91.chunk.js.LICENSE.txt",
-    "static/media/Events.less": "/9-hungarian-dog-species/static/media/Events.20e56417.less",
+    "static/media/Events.less": "/9-hungarian-dog-species/static/media/Events.1cf6bad5.less",
     "static/media/agar.jpg": "/9-hungarian-dog-species/static/media/agar.7f155f15.jpg",
     "static/media/dogdesc.png": "/9-hungarian-dog-species/static/media/dogdesc.1ace20b5.png",
     "static/media/drot-vizsla.jpg": "/9-hungarian-dog-species/static/media/drot-vizsla.598d7356.jpg",
@@ -48,7 +48,7 @@
   "entrypoints": [
     "static/js/runtime-main.aef3e19c.js",
     "static/js/2.38474e91.chunk.js",
-    "static/css/main.6b5bbc3c.chunk.css",
-    "static/js/main.4e8d9b84.chunk.js"
+    "static/css/main.be8214ac.chunk.css",
+    "static/js/main.ddde5085.chunk.js"
   ]
 }
