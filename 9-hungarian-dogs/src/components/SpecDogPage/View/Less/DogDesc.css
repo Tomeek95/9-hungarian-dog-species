@@ -64,11 +64,20 @@
   display: block;
   background-size: cover;
 }
+.button-without-outline {
+  transition: all 0.25s;
+}
 .button-without-outline:focus {
   outline: none;
 }
+.button-push-animation {
+  transition: all 0.25s;
+}
 .button-push-animation:active {
   transform: translateY(2px);
+}
+.button-hover-animation {
+  transition: all 0.25s;
 }
 .button-hover-animation:hover {
   opacity: 0.6;
@@ -130,6 +139,7 @@
   width: 80%;
 }
 .content-box__origin-more-button {
+  transition: all 0.25s;
   margin-top: 3rem;
   padding: 2rem 4rem;
   align-self: flex-start;
@@ -139,7 +149,6 @@
   font-size: 1.8rem;
   font-weight: 600;
   cursor: pointer;
-  transition: all 0.2s;
 }
 .content-box__origin-more-button:focus {
   outline: none;

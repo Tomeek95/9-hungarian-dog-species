@@ -64,11 +64,20 @@
   display: block;
   background-size: cover;
 }
+.button-without-outline {
+  transition: all 0.25s;
+}
 .button-without-outline:focus {
   outline: none;
 }
+.button-push-animation {
+  transition: all 0.25s;
+}
 .button-push-animation:active {
   transform: translateY(2px);
+}
+.button-hover-animation {
+  transition: all 0.25s;
 }
 .button-hover-animation:hover {
   opacity: 0.6;
