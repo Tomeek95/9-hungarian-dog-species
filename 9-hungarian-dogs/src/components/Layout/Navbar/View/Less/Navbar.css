@@ -64,11 +64,20 @@
   display: block;
   background-size: cover;
 }
+.button-without-outline {
+  transition: all 0.25s;
+}
 .button-without-outline:focus {
   outline: none;
 }
+.button-push-animation {
+  transition: all 0.25s;
+}
 .button-push-animation:active {
   transform: translateY(2px);
+}
+.button-hover-animation {
+  transition: all 0.25s;
 }
 .button-hover-animation:hover {
   opacity: 0.6;
@@ -237,13 +246,13 @@
   margin-right: 4rem;
 }
 .navbar-container .btn-container {
+  transition: all 0.25s;
   height: 4rem;
   width: 4rem;
   margin-top: 0.2rem;
   display: flex;
   align-items: center;
   cursor: pointer;
-  transition: all 0.25s;
 }
 .navbar-container .btn-container:focus {
   outline: none;

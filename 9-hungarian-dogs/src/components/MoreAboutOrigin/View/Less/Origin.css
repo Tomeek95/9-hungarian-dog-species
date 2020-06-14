@@ -64,11 +64,20 @@
   display: block;
   background-size: cover;
 }
+.button-without-outline {
+  transition: all 0.25s;
+}
 .button-without-outline:focus {
   outline: none;
 }
+.button-push-animation {
+  transition: all 0.25s;
+}
 .button-push-animation:active {
   transform: translateY(2px);
+}
+.button-hover-animation {
+  transition: all 0.25s;
 }
 .button-hover-animation:hover {
   opacity: 0.6;
@@ -99,6 +108,7 @@
   background-color: #ffffff;
 }
 .full-width-line__back-button {
+  transition: all 0.25s;
   background-color: #ffffff;
   padding: 1rem 5rem;
   border: 2px black solid;
@@ -106,7 +116,6 @@
   font-size: 1.6rem;
   font-weight: 600;
   cursor: pointer;
-  transition: all 0.2s;
 }
 .full-width-line__back-button:focus {
   outline: none;
